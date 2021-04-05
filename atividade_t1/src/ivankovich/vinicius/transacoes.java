@@ -3,15 +3,14 @@ package ivankovich.vinicius;
 import java.util.Random;
 
 public class transacoes {
-    public Conta conta;
-    public Cliente cliente;
 
 
 
-    public String gerartran(float qua ){
+
+    public String gerartran(float qua ,Conta c, Cliente u){
         int tid=getRandomNumberInRange(1000,9999);
         String qr;
-        qr=this.conta.id+";"+this.cliente.usuario+";"+qua+";"+tid  ;
+        qr=c.id+";"+u.usuario+";"+qua+";"+tid  ;
         return qr;
 
 
@@ -20,9 +19,9 @@ public class transacoes {
 
     }
 
-    public void pagar(String qr, Conta destino){
+    public void pagar(String qr,Conta pagador, Conta recebedor){
         String[] dados = qr.split( ";" ) ;
-        this.conta.transferirPara(Double.parseDouble(dados[2]),destino);
+        pagador.transferirPara(Double.parseDouble(dados[2]),recebedor);
 
 
     }

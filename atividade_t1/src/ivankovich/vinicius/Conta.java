@@ -2,8 +2,9 @@ package ivankovich.vinicius;
 
 public class Conta {
     public int id;
-    private double saldo;
-    private Cliente cliente;
+    public double saldo;
+    public Cliente cliente=new Cliente();
+
 
 
 
