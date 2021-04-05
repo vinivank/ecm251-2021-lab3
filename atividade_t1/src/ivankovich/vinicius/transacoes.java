@@ -20,9 +20,9 @@ public class transacoes {
 
     }
 
-    public void pagar(String qr){
+    public void pagar(String qr, Conta destino){
         String[] dados = qr.split( ";" ) ;
-        conta.transferirPara(dados[2],dados[0]);
+        conta.transferirPara(Double.parseDouble(dados[2]),destino);
 
 
     }
