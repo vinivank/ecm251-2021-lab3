@@ -6,7 +6,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Conta c1=new Conta() ,c2=new Conta(),c3=new Conta() ;
+        Conta c1=new Conta(),c2=new Conta(),c3=new Conta() ;
+        c1.id=0;
+        c2.id=1;
+        c3.id=2;
         transacoes t=new transacoes();
         System.out.println("digite o primeiro usuario");
         Scanner u1=new Scanner(System.in);

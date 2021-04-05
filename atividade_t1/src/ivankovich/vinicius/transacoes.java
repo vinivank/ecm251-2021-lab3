@@ -22,7 +22,10 @@ public class transacoes {
     public void pagar(String qr,Conta pagador, Conta recebedor){
         String[] dados = qr.split( ";" ) ;
         if ((recebedor.id == Integer.parseInt(dados[0]))&&(recebedor.cliente.usuario.equals(dados[1]))){
-             pagador.transferirPara(Double.parseDouble(dados[2]),recebedor);
+             if (pagador.transferirPara(Double.parseDouble(dados[2]),recebedor))
+                 System.out.println("transação feita com sucesso");
+             else
+                 System.out.println("saldo insuficiente");
         }
         else{
 
