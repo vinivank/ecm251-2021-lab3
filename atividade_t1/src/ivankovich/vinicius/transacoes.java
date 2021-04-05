@@ -1,3 +1,11 @@
+
+//Vinicius Savrutsky Ivankovich     RA:19.01014-0
+//Mateus Silva Souza                RA:19.01309-4
+
+
+
+
+
 package ivankovich.vinicius;
 
 import java.util.Random;
