@@ -24,7 +24,7 @@ public class Main {
         c3.saldo=3000;
 
 
-        System.out.println("saldos antes");
+        System.out.println("Estado inicial");
         System.out.println("saldo de "+c1.cliente.usuario+":  ");
         System.out.println(c1.saldo);
         System.out.println("saldo de "+c2.cliente.usuario+":  ");
@@ -44,7 +44,7 @@ public class Main {
         t.pagar(qr2,c3,c2);
 
 
-        System.out.println("saldos depois");
+        System.out.println("Estado final");
         System.out.println("saldo de "+c1.cliente.usuario+":  ");
         System.out.println(c1.saldo);
         System.out.println("saldo de "+c2.cliente.usuario+":  ");
