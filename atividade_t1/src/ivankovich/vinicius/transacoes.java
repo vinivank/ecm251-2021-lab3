@@ -21,7 +21,14 @@ public class transacoes {
 
     public void pagar(String qr,Conta pagador, Conta recebedor){
         String[] dados = qr.split( ";" ) ;
-        pagador.transferirPara(Double.parseDouble(dados[2]),recebedor);
+        if ((recebedor.id == Integer.parseInt(dados[0]))&&(recebedor.cliente.usuario.equals(dados[1]))){
+             pagador.transferirPara(Double.parseDouble(dados[2]),recebedor);
+        }
+        else{
+
+            System.out.println("os dados não conferem");
+        }
+
 
 
     }
