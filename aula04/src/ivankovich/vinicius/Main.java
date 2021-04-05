@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args) {
 	Conta c1;
 	c1=new Conta();
-	c1.cliente=new Cliente();
+	c1.Cliente=new Cliente();
 
-	c1.cliente.titular="adam";
+	c1.Cliente.titular="adam";
 	c1.saldo=199.99;
 
 
