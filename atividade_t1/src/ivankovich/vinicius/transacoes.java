@@ -11,7 +11,7 @@ public class transacoes {
     public String gerartran(float qua ){
         int tid=getRandomNumberInRange(1000,9999);
         String qr;
-        qr=conta.id+";"+cliente.usuario+";"+qua+";"+tid  ;
+        qr=this.conta.id+";"+this.cliente.usuario+";"+qua+";"+tid  ;
         return qr;
 
 
@@ -22,7 +22,7 @@ public class transacoes {
 
     public void pagar(String qr, Conta destino){
         String[] dados = qr.split( ";" ) ;
-        conta.transferirPara(Double.parseDouble(dados[2]),destino);
+        this.conta.transferirPara(Double.parseDouble(dados[2]),destino);
 
 
     }
