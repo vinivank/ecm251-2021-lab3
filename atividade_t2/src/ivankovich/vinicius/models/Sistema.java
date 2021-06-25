@@ -36,12 +36,13 @@ public class Sistema {
 
 
     private void Menu() {
-        System.out.println("Boas vindas á MAsK_S0c13ty");
+        System.out.println("Boas vindas á MAsK_S0c13ty\n\n");
         System.out.println("Escolha a ação desejada: ");
         System.out.println("[ 1 ] Cadastrar membro");
         System.out.println("[ 2 ] Remover membro");
         System.out.println("[ 3 ] Exibir horário");
-        System.out.println("[ 4 ] Sair \n");
+        System.out.println("[ 4 ] Exibir todos os membros");
+        System.out.println("[ 5 ] Sair \n");
     }
 
 
@@ -100,6 +101,11 @@ public class Sistema {
 
                 break;
             case 4:
+
+
+                
+                break;
+            case 5:
                 exec=false;
                 break;
             default:
