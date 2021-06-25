@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class Sistema {
     int j = 0; // Variavel auxiliar da removerMembro ( case 2 )
+    int k = 0; //Variavel usada no exibir membros  ( case 4 )
     int indiceRemocao;
 
     ArrayList<Membro> dadosMembros = new ArrayList<>();
@@ -50,10 +51,7 @@ public class Sistema {
 
     private void avaliarOpcao(int opcao) {
         switch (opcao){
-            case 0:
-                System.out.println("Até Logo!");
-                this.exec = false;
-                break;
+
             case 1:
                 System.out.println("Digite o usuario: ");
                 String usuario = usuarios.next();
@@ -101,12 +99,16 @@ public class Sistema {
 
                 break;
             case 4:
-
-
+                for(Membro i: dadosMembros){
+                    System.out.println(k+"º: "+i.toString());
+                    k++;
+                }
+                k = 0;
 
                 break;
             case 5:
-                exec=false;
+                System.out.println("Sistema Desligando");
+                this.exec=false;
                 break;
             default:
                 System.out.println("Opcao invalida");
