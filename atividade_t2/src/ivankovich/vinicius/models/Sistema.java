@@ -1,8 +1,14 @@
 package ivankovich.vinicius.models;
 
 
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Sistema {
+
+    ArrayList<Membro> bancoMembros = new ArrayList<>();
+
+
     public void Executar(){
         Menu();
 

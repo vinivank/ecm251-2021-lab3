@@ -8,4 +8,12 @@ abstract public class Membro implements PostMensagem {
     protected String usuario;
 
 
+
+    public Membro(String usuario, String email,int funcao) {
+        this.usuario = usuario;
+        this.email = email;
+        this.funcao = funcao;
+    }
+
+
 }
