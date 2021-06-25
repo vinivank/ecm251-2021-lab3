@@ -42,13 +42,13 @@ public class Sistema {
 
     private void Menu() {
         System.out.println("Boas vindas á MAsK_S0c13ty\n\n");
+        System.out.println("Horario atual é :  "+atual"\n");
         System.out.println("Escolha a ação desejada: ");
         System.out.println("[ 1 ] Cadastrar membro");
         System.out.println("[ 2 ] Remover membro");
-        System.out.println("[ 3 ] Exibir horário");
+        System.out.println("[ 3 ] Trocar horario");
         System.out.println("[ 4 ] Exibir todos os membros");
         System.out.println("[ 5 ] Postar mensagem");
-        System.out.println("[ 6 ] Trocar horario");
         System.out.println("[ 7 ] Sair \n");
     }
 
@@ -101,7 +101,7 @@ public class Sistema {
 
             case 3:
                 System.out.println("Horario atual :  "+atual);
-                
+
                 break;
             case 4:
                 for(Membro i: dadosMembros){
@@ -111,7 +111,7 @@ public class Sistema {
                 k = 0;
 
                 break;
-            case 7:
+            case 6:
                 System.out.println("Sistema Desligando");
                 this.exec=false;
                 break;
