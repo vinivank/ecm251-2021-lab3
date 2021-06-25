@@ -1,6 +1,8 @@
 package ivankovich.vinicius.models;
 
 
+import ivankovich.vinicius.enums.Funcoes;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -60,16 +62,16 @@ public class Sistema {
                     break;
                 }
                 if (funcao == 1)
-                    dadosMembros.add(new Mobile_Members(usuario,email,funcao));
+                    dadosMembros.add(new Mobile_Members(usuario,email, Funcoes.Mobile_Members));
 
                 if (funcao == 2)
-                    dadosMembros.add(new HeavyLifters(usuario,email,funcao));
+                    dadosMembros.add(new HeavyLifters(usuario,email,Funcoes.Heavy_Lifters));
 
                 if (funcao == 3)
-                    dadosMembros.add(new ScriptGuys(usuario,email,funcao));
+                    dadosMembros.add(new ScriptGuys(usuario,email,Funcoes.Script_Guys));
 
                 if (funcao == 4)
-                    dadosMembros.add(new BigBrother(usuario,email,funcao));
+                    dadosMembros.add(new BigBrother(usuario,email,Funcoes.Big_Brother));
 
                 System.out.println("Adição de membro concluida\n");
 
