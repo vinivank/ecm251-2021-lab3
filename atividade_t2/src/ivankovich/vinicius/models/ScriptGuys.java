@@ -9,4 +9,19 @@ public class ScriptGuys extends Membro{
     }
 
 
+
+    @Override
+    public void mNormal() {
+        System.out.println("Prazer em ajudar novos amigos de código!");
+    }
+
+
+
+    @Override
+    public void mExtra() {
+        System.out.println("QU3Ro_S3us_r3curs0s.py");
+    }
+
+
+
 }

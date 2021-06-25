@@ -11,5 +11,18 @@ public class Mobile_Members extends Membro{
     }
 
 
+    @Override
+    public void mNormal() {
+        System.out.println("Happy Coding!");
+    }
+
+
+
+    @Override
+    public void mExtra() {
+        System.out.println("Happy_C0d1ng. Maskers");
+    }
+
+
 
 }

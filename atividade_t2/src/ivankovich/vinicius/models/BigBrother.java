@@ -9,4 +9,18 @@ public class BigBrother extends Membro{
     }
 
 
+    @Override
+    public void mNormal() {
+        System.out.println("Sempre ajudando as pessoas membros ou não S2!");
+    }
+
+
+
+    @Override
+    public void mExtra() {
+        System.out.println(". . .");
+    }
+
+
+
 }
