@@ -2,11 +2,15 @@ package ivankovich.vinicius.models;
 
 
 import ivankovich.vinicius.enums.Funcoes;
+import ivankovich.vinicius.enums.Horario;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Sistema {
+
+    static Horario atual= Horario.Normal;
+
     int j = 0; // Variavel auxiliar da removerMembro ( case 2 )
     int k = 0; //Variavel usada no exibir membros  ( case 4 )
     int indiceRemocao;
@@ -96,9 +100,8 @@ public class Sistema {
 
 
             case 3:
-
-
-
+                System.out.println("Horario atual :  "+atual);
+                
                 break;
             case 4:
                 for(Membro i: dadosMembros){
