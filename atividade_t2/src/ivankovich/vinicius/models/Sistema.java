@@ -49,7 +49,7 @@ public class Sistema {
         System.out.println("[ 3 ] Trocar horario");
         System.out.println("[ 4 ] Exibir todos os membros");
         System.out.println("[ 5 ] Postar mensagem");
-        System.out.println("[ 7 ] Sair \n");
+        System.out.println("[ 6 ] Sair \n");
     }
 
 
@@ -112,12 +112,25 @@ public class Sistema {
                 break;
             case 4:
                 for(Membro i: dadosMembros){
-                    System.out.println(k+"º: "+i.toString());
+                    i.apresentar();
                     k++;
                 }
                 k = 0;
 
                 break;
+
+            case 5:
+
+                for(Membro i: dadosMembros){
+                    System.out.println(j+"º: "+i.toString());
+                    if(atual == Horario.Normal)i.mNormal();
+                    else i.mExtra();
+                    j++;
+                }
+                j = 0;
+
+                break;
+
             case 6:
                 System.out.println("Sistema Desligando");
                 this.exec=false;
