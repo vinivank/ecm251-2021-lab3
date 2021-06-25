@@ -16,6 +16,27 @@ abstract public class Membro implements PostMensagem, Apresentacao {
         this.email = email;
         this.funcao = funcao;
     }
+    @Override
+    public String toString() {
+        return "{" +
+                "usuario ='" + usuario + '\'' +
+                ", email ='" + email + '\'' +
+                ", cargo =" + funcao +
+                '}';
+    }
 
+
+    public String get_email() { return email; }
+    public Funcoes get_funcao() { return funcao; }
+    public String get_usuario() { return usuario; }
+
+    @Override
+    public void apresentar() {
+        System.out.println("Meu usuario é :"+get_usuario()+", meu e-mail é "+get_email()+" e tenho o cargo de:"+get_funcao());
+    }
+
+
+
+    
 
 }
