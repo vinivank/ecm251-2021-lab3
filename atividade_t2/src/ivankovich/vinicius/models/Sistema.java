@@ -12,17 +12,19 @@ public class Sistema {
     static Horario atual= Horario.Normal;
 
     int j = 0; // Variavel auxiliar da removerMembro ( case 2 )
+
     int k = 0; //Variavel usada no exibir membros  ( case 4 )
+
     int indiceRemocao;
 
     ArrayList<Membro> dadosMembros = new ArrayList<>();
     private boolean exec = true;
 
-    Scanner acao = new Scanner(System.in);
-    Scanner usuarios = new Scanner(System.in);
-    Scanner emails = new Scanner(System.in);
-    Scanner funcaos = new Scanner(System.in);
-    Scanner id = new Scanner(System.in);
+    private final Scanner acao = new Scanner(System.in);
+    private final Scanner usuarios = new Scanner(System.in);
+    private final Scanner emails = new Scanner(System.in);
+    private final Scanner funcoes = new Scanner(System.in);
+    private final Scanner id = new Scanner(System.in);
 
 
     public void Executar(){
@@ -64,7 +66,7 @@ public class Sistema {
                 System.out.println("Digite o email : ");
                 String email = emails.next();
                 System.out.println("Escolha a função:\n [ 1 ] MobileMember\n [ 2 ] HeavyLifter\n [ 3 ] ScriptGuys\n [ 4 ] BigBrothers ");
-                int funcao = funcaos.nextInt();
+                int funcao = funcoes.nextInt();
                 if(funcao < 1 || funcao > 4) {
                     System.out.println("Número invalido");
                     break;
