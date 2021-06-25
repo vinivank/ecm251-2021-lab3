@@ -55,6 +55,23 @@ public class Sistema {
                 String email = emails.next();
                 System.out.println("Escolha a função:\n [ 1 ] MobileMember\n [ 2 ] HeavyLifter\n [ 3 ] ScriptGuys\n [ 4 ] BigBrothers ");
                 int funcao = funcaos.nextInt();
+                if(funcao < 1 || funcao > 4) {
+                    System.out.println("Número invalido");
+                    break;
+                }
+                if (funcao == 1)
+                    dadosMembros.add(new Mobile_Members(usuario,email,funcao));
+
+                if (funcao == 2)
+                    dadosMembros.add(new HeavyLifters(usuario,email,funcao));
+
+                if (funcao == 3)
+                    dadosMembros.add(new ScriptGuys(usuario,email,funcao));
+
+                if (funcao == 4)
+                    dadosMembros.add(new BigBrother(usuario,email,funcao));
+
+                System.out.println("Adição de membro concluida\n");
 
                 break;
             case 2:
