@@ -43,7 +43,9 @@ public class Sistema {
         System.out.println("[ 2 ] Remover membro");
         System.out.println("[ 3 ] Exibir horário");
         System.out.println("[ 4 ] Exibir todos os membros");
-        System.out.println("[ 5 ] Sair \n");
+        System.out.println("[ 5 ] Postar mensagem");
+        System.out.println("[ 6 ] Trocar horario");
+        System.out.println("[ 7 ] Sair \n");
     }
 
 
@@ -106,7 +108,7 @@ public class Sistema {
                 k = 0;
 
                 break;
-            case 5:
+            case 7:
                 System.out.println("Sistema Desligando");
                 this.exec=false;
                 break;
