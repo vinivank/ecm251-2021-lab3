@@ -42,7 +42,7 @@ public class Sistema {
 
     private void Menu() {
         System.out.println("Boas vindas á MAsK_S0c13ty\n\n");
-        System.out.println("Horario atual é :  "+atual"\n");
+        System.out.println("Horario atual é :  "+atual+"\n");
         System.out.println("Escolha a ação desejada: ");
         System.out.println("[ 1 ] Cadastrar membro");
         System.out.println("[ 2 ] Remover membro");
@@ -100,7 +100,14 @@ public class Sistema {
 
 
             case 3:
-                System.out.println("Horario atual :  "+atual);
+                if(atual == Horario.Normal){
+                    atual = Horario.Extra;
+                    System.out.println("O horario agora é : "+atual);
+
+                }else if (atual == Horario.Extra){
+                    atual = Horario.Normal;
+                    System.out.println("O horario agora é : "+atual);
+                }
 
                 break;
             case 4:
