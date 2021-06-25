@@ -4,7 +4,7 @@ import ivankovich.vinicius.interfaces.PostMensagem;
 
 abstract public class Membro implements PostMensagem {
     protected String email;
-    protected String funcao;
+    protected int funcao;
     protected String usuario;
 
 
