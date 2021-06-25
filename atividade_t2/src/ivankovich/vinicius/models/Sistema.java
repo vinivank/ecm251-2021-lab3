@@ -7,9 +7,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Sistema {
-
-
-
+    int j = 0; // Variavel auxiliar da removerMembro ( case 2 )
+    int indiceRemocao;
 
     ArrayList<Membro> dadosMembros = new ArrayList<>();
     private boolean exec = true;
@@ -18,6 +17,7 @@ public class Sistema {
     Scanner usuarios = new Scanner(System.in);
     Scanner emails = new Scanner(System.in);
     Scanner funcaos = new Scanner(System.in);
+    Scanner id = new Scanner(System.in);
 
 
     public void Executar(){
@@ -79,11 +79,21 @@ public class Sistema {
                 System.out.println("Adição de membro concluida\n");
 
                 break;
+
             case 2:
 
-
-
+                for(Membro i: dadosMembros){
+                    System.out.println(j+"º: "+i.toString());
+                    dadosMembros.get(j).apresentar();
+                    j++;
+                }
+                j = 0;
+                System.out.println("Selecione o id de quem deseja remover ");
+                indiceRemocao = id.nextInt();
+                dadosMembros.remove(indiceRemocao);
                 break;
+
+
             case 3:
 
 
